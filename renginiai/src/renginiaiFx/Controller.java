@@ -15,6 +15,11 @@ public class Controller {
     @FXML
     javafx.scene.control.Button goToLoginButton;
 
+    @FXML
+    public void closeWindow(javafx.event.ActionEvent event){
+        System.exit(0);
+    }
+
 
     @FXML
     public void goToRegister(javafx.event.ActionEvent event){
