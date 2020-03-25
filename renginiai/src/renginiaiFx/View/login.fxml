@@ -15,10 +15,11 @@
         <Label layoutX="20.0" layoutY="102.0" text="Username/Email" textFill="WHITE" />
         <Label layoutX="55.0" layoutY="131.0" text="Password" textFill="WHITE" />
         <TextField fx:id="passwordLogin" layoutX="110.0" layoutY="127.0" style="-fx-border-color: black; -fx-background-color: #333333; -fx-text-fill: white;" />
-        <TextField fx:id="usernameEmailLogin" layoutX="110.0" layoutY="97.0" style="-fx-background-color: #333333; -fx-border-color: black; -fx-text-fill: white;" />
-        <Button fx:id="loginButton" layoutX="110.0" layoutY="161.0" mnemonicParsing="false" style="-fx-background-color: #333333; -fx-border-color: black;" text="Register" textFill="WHITE" />
+        <TextField fx:id="usernameOrEmailLogin" layoutX="110.0" layoutY="97.0" style="-fx-background-color: #333333; -fx-border-color: black; -fx-text-fill: white;" />
+        <Button fx:id="loginButton" layoutX="110.0" layoutY="161.0" mnemonicParsing="false" onAction="#loginValid" style="-fx-background-color: #333333; -fx-border-color: black;" text="Login" textFill="WHITE" />
         <Label layoutX="83.0" layoutY="310.0" text="Want to create an account?" textFill="WHITE" />
         <Button fx:id="goToRegisterButton" layoutX="115.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToRegister" style="-fx-background-color: #333333; -fx-border-color: black;" text="Click here!" textFill="WHITE" />
       <Button fx:id="closeBtn" layoutX="267.0" layoutY="7.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #333333; -fx-border-color: black;" text="X" textFill="#00ffe9" />
+      <Label fx:id="loginNotice" layoutX="83.0" layoutY="267.0" prefHeight="30.0" prefWidth="150.0" textFill="WHITE" />
     </children>
 </AnchorPane>
